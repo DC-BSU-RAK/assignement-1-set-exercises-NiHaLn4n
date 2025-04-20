@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Night Photography</title>
+    <style>
+        /* Minimal CSS for side-by-side layout + filters */
+        .gallery-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .photo-card {
+            flex: 1;
+            min-width: 300px;
+        }
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            /* CSS filters */
+            filter: grayscale(20%) contrast(110%) brightness(95%);
+            transition: filter 0.3s;
+        }
+        .gallery-image:hover {
+            filter: grayscale(0%) contrast(100%) brightness(100%);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Urban Nightscapes</h1>
+        <p>Three perspectives of city life after dark</p>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Photo 1 - Using CC0 licensed image from Unsplash -->
+        <div class="photo-card">
+            <img src="images/asian-street.jpg" 
+                 alt="Neon-lit Tokyo street at night with pedestrians"
+                 width="600"
+                 height="400"
+                 title="Tokyo Night Street"
+                 class="gallery-image">
+            <div class="photo-info">
+                <h2>Neon Streets</h2>
+                <p class="license">CC0 License - Free for commercial use (Photo by Clay Banks)</p>
+            </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="photo-card">
+            <img src="images/night-street.jpg" 
+                 alt="Rainy city street at night with colorful reflections"
+                 width="600"
+                 height="400"
+                 title="Rainy Night Reflections"
+                 class="gallery-image">
+            <div class="photo-info">
+                <h2>Wet Reflections</h2>
+                <p class="license">CC0 License - Free for commercial use (Photo by James Wheeler)</p>
+            </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="photo-card">
+            <img src="images/bridge-traffic.jpg" 
+                 alt="Long exposure of car lights on city bridge at night"
+                 width="600"
+                 height="400"
+                 title="City Bridge Traffic"
+                 class="gallery-image">
+            <div class="photo-info">
+                <h2>Light Trails</h2>
+                <p class="license">CC0 License - Free for commercial use (Photo by Max Bender)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Urban photography gallery - All images CC0 licensed for commercial use</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* ===== COLOR VARIABLES ===== */
+:root {
+    --primary: #7cb342;       /* Light green */
+    --primary-dark: #689f38;  /* Slightly darker green */
+    --text: #2e3d49;         /* Dark gray for text */
+    --light-bg: #f1f8e9;     /* Very light green background */
+    --input-bg: #ffffff;     /* White for inputs */
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* ===== BASE STYLES ===== */
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* ===== CALCULATOR CONTAINER ===== */
+  .calculator {
+    background-color: var(--input-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 25px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  /* ===== TYPOGRAPHY ===== */
+  h1 {
+    color: var(--primary-dark);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+  }
+  
+  /* ===== INPUT STYLES ===== */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text);
+    font-weight: 500;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--input-bg);
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+  
+  input:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(124, 179, 66, 0.2);
+  }
+  
+  /* ===== BUTTON STYLES ===== */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-1px);
+  }
+  
+  /* ===== RESULT DISPLAY ===== */
+  #result {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text);
+    border-left: 4px solid var(--primary);
+  }

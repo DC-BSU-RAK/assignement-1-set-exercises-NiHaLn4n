@@ -1,0 +1,142 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #8B0000; /* Dark red */
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #A52A2A;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+}
+
+.section-dark {
+    background-color: #f5f5f5;
+}
+
+.section-light {
+    background-color: white;
+}
+
+h2 {
+    color: #8B0000;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #8B0000;
+    padding-bottom: 0.5rem;
+}
+
+/* Lists */
+.info-list {
+    list-style-type: none;
+}
+
+.info-list li {
+    margin-bottom: 0.8rem;
+}
+
+.cast-list {
+    list-style-type: none;
+}
+
+.cast-list li {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #8B0000;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #A52A2A;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Blockquotes */
+blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid #8B0000;
+}
+
+cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-weight: bold;
+}
